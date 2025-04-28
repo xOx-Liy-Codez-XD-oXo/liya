@@ -1,5 +1,9 @@
 # LIYA
 LIYA is a streaming file format for the Wii. The streamer loads an equal piece of the file every frame. LIYA can also be used as an intermediary format between Blender and further tools. 
+## LIYA boneanim export script usage
+The script expects that all the bones are numbered at the start with a comma following. The script will export the bone's transform offset from the origin, apt for immediately calculating a modelview matrix from the animation data with minimal processing, i.e. a skeleton in it's default pose will be exported with all zeroes for that frame. 
+Open the script in a Blender text editor, set the amount of frames to export, select your armature in a 3D viewport, and click the play button in the text editor.
+
 ## LIYA file walkthrough. 
 Walkthrough of this file. 
 ```
